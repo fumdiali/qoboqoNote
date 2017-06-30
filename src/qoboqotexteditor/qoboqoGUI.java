@@ -45,7 +45,7 @@ public class qoboqoGUI extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         textArea = new javax.swing.JTextArea();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        newFIle = new javax.swing.JMenu();
         newFile = new javax.swing.JMenuItem();
         openFile = new javax.swing.JMenuItem();
         saveFile = new javax.swing.JMenuItem();
@@ -91,7 +91,7 @@ public class qoboqoGUI extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 334, Short.MAX_VALUE))
         );
 
-        jMenu1.setText("File");
+        newFIle.setText("File");
 
         newFile.setText("New");
         newFile.addActionListener(new java.awt.event.ActionListener() {
@@ -99,7 +99,7 @@ public class qoboqoGUI extends javax.swing.JFrame {
                 newFileActionPerformed(evt);
             }
         });
-        jMenu1.add(newFile);
+        newFIle.add(newFile);
 
         openFile.setText("Open");
         openFile.addActionListener(new java.awt.event.ActionListener() {
@@ -107,7 +107,7 @@ public class qoboqoGUI extends javax.swing.JFrame {
                 openFileActionPerformed(evt);
             }
         });
-        jMenu1.add(openFile);
+        newFIle.add(openFile);
 
         saveFile.setText("Save");
         saveFile.addActionListener(new java.awt.event.ActionListener() {
@@ -115,7 +115,7 @@ public class qoboqoGUI extends javax.swing.JFrame {
                 saveFileActionPerformed(evt);
             }
         });
-        jMenu1.add(saveFile);
+        newFIle.add(saveFile);
 
         exitFile.setText("Close");
         exitFile.addActionListener(new java.awt.event.ActionListener() {
@@ -123,9 +123,9 @@ public class qoboqoGUI extends javax.swing.JFrame {
                 exitFileActionPerformed(evt);
             }
         });
-        jMenu1.add(exitFile);
+        newFIle.add(exitFile);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(newFIle);
 
         jMenu2.setText("Edit");
 
@@ -171,12 +171,13 @@ public class qoboqoGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
     private void newFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newFileActionPerformed
         // TODO add your handling code here:
         textArea.setText("");
         setTitle(fileName);
     }//GEN-LAST:event_newFileActionPerformed
-
+     
     private void openFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openFileActionPerformed
         // opens directory window on user system to select file to open
         FileDialog fd = new FileDialog(qoboqoGUI.this,"Open File",FileDialog.LOAD);
@@ -330,11 +331,11 @@ public class qoboqoGUI extends javax.swing.JFrame {
     private javax.swing.JMenuItem copyFile;
     private javax.swing.JMenuItem cutFile;
     private javax.swing.JMenuItem exitFile;
-    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JMenu newFIle;
     private javax.swing.JMenuItem newFile;
     private javax.swing.JMenuItem openFile;
     private javax.swing.JMenuItem pasteFile;
