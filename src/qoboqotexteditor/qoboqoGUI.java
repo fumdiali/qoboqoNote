@@ -32,6 +32,7 @@ public class qoboqoGUI extends javax.swing.JFrame {
      */
     public qoboqoGUI() {
         initComponents();
+        
     }
 
     
@@ -65,6 +66,9 @@ public class qoboqoGUI extends javax.swing.JFrame {
             }
         });
 
+        searchField.setBackground(new java.awt.Color(205, 250, 156));
+
+        textArea.setBackground(new java.awt.Color(209, 229, 109));
         textArea.setColumns(20);
         textArea.setRows(5);
         jScrollPane1.setViewportView(textArea);
@@ -90,6 +94,8 @@ public class qoboqoGUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 334, Short.MAX_VALUE))
         );
+
+        jMenuBar1.setBackground(new java.awt.Color(84, 197, 79));
 
         newFIle.setText("File");
 
